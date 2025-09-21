@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>הצעת השקעה: Homeostatic AI</title>
+    <title>Investment Proposal: Homeostatic AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,6 @@
 <style>
         body {
             font-family: 'Assistant', sans-serif;
-            /* overflow: hidden;  <-- הורדתי את השורה הזו */
             background-color: #0a0a23;
             color: #f5f6f7;
         }
@@ -23,14 +22,14 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* <-- שיניתי מ-center ל-flex-start */
+            justify-content: flex-start;
             align-items: center;
-            padding: 5rem 4rem; /* <-- התאמתי את הריווח העליון */
+            padding: 5rem 4rem;
             opacity: 0;
             transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
             transform: scale(0.95);
             pointer-events: none;
-            overflow-y: auto; /* <-- הוספתי את השורה הזו כדי לאפשר גלילה */
+            overflow-y: auto;
         }
         .slide.active {
             opacity: 1;
@@ -77,8 +76,8 @@
         .nav-arrow:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
-        #prevBtn { right: 2rem; }
-        #nextBtn { left: 2rem; }
+        #prevBtn { left: 2rem; }
+        #nextBtn { right: 2rem; }
         #progressBar {
             position: fixed;
             bottom: 0;
@@ -91,14 +90,14 @@
         .logo {
             position: absolute;
             top: 1.5rem;
-            right: 2rem;
+            left: 2rem;
             font-weight: 700;
             font-size: 1.5rem;
         }
         .slide-counter {
             position: absolute;
             bottom: 1.5rem;
-            right: 2rem;
+            left: 2rem;
             font-size: 1rem;
             color: #888;
         }
@@ -125,12 +124,12 @@
                 top: auto;
                 transform: none;
             }
-            #prevBtn { right: 1rem; }
-            #nextBtn { left: 1rem; }
+            #prevBtn { left: 1rem; }
+            #nextBtn { right: 1rem; }
         }
     </style>
 </head>
-<body class="text-right">
+<body class="text-left">
 
     <div class="logo">
         Homeostatic AI
@@ -138,68 +137,68 @@
 
 <div id="slide-1" class="slide active">
         <div class="slide-content text-center">
-            <div class="text-teal-300 mb-4 text-xl">הצעת השקעה לסבב סיד (Seed)</div>
+            <div class="text-teal-300 mb-4 text-xl">Seed Round Investment Proposal</div>
 
             <h1 class="mb-2 text-6xl font-bold tracking-tight">Homeostatic AI</h1>
 
             <img src="https://i.imgur.com/bmoZ6hR.png"
-                 alt="תרשים ארכיטקטורה של Homeostatic AI"
+                 alt="Homeostatic AI Architecture Diagram"
                  class="my-4 max-w-xl max-h-[40vh] mx-auto rounded-lg shadow-lg border border-gray-700">
 
-            <p class="text-xl text-gray-300">הדור הבא של LLMOps: פלטפורמה אוטונומית לניהול וויסות מודלי שפה</p>
+            <p class="text-xl text-gray-300">The Next Generation of LLMOps: An Autonomous Platform for Managing and Regulating Language Models</p>
             
-            <p class="mt-6 text-gray-500">אוקטובר 2025</p>
+            <p class="mt-6 text-gray-500">October 2025</p>
         </div>
     </div>
     <div id="slide-2" class="slide">
         <div class="slide-content">
-            <h2>הבעיה: העלות הנסתרת של חדשנות ה-AI</h2>
-            <p class="mb-8">הפריחה בתחום ה-GenAI יצרה משבר: העלות והמורכבות של תחזוקת מודלי שפה (LLMs) הופכות לבלתי קיימא ופוגעות ב-ROI.</p>
-            <div class="grid md:grid-cols-2 gap-8 text-right">
+            <h2>The Problem: The Hidden Cost of AI Innovation</h2>
+            <p class="mb-8">The GenAI boom has created a crisis: the cost and complexity of maintaining Large Language Models (LLMs) are becoming unsustainable and hurting ROI.</p>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
                 <div class="card">
-                    <h3 class="text-xl font-semibold text-red-400 mb-2">נטל הוצאות הון (CapEx)</h3>
-                    <p>אימון מחדש (Fine-tuning) הוא יקר, דורש משאבי GPU וכישרון מיוחד, ומוביל לדעיכת ידע המודל בין עדכונים נדירים.</p>
+                    <h3 class="text-xl font-semibold text-red-400 mb-2">Capital Expenditure (CapEx) Burden</h3>
+                    <p>Fine-tuning is expensive, requires specialized GPU resources and talent, and leads to model knowledge decay between infrequent updates.</p>
                 </div>
                 <div class="card">
-                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">זחילת הוצאות תפעול (OpEx)</h3>
-                    <p>פתרונות כמו RAG והנדסת פרומפטים יוצרים עלויות תפעול נסתרות, מורכבות תשתיתית וצורך בהתערבות אנושית מתמדת.</p>
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">Operational Expenditure (OpEx) Creep</h3>
+                    <p>Solutions like RAG and prompt engineering create hidden operational costs, infrastructure complexity, and a need for constant human intervention.</p>
                 </div>
             </div>
-            <p class="mt-8 font-semibold">ארגונים נאלצים לבחור בין שתי חלופות יקרות ולא יעילות, במקום לנהל את משאבי ה-AI שלהם באופן אופטימלי.</p>
+            <p class="mt-8 font-semibold">Organizations are forced to choose between two expensive and inefficient alternatives, instead of optimally managing their AI resources.</p>
         </div>
     </div>
 
     <div id="slide-3" class="slide">
         <div class="slide-content">
-            <h2>הפתרון: הסוכן ההומאוסטטי</h2>
-            <p class="mb-8">פלטפורמת SaaS B2B המציעה את פתרון ה-LLMOps האוטונומי ובעל הוויסות העצמי הראשון בתעשייה.</p>
+            <h2>The Solution: The Homeostatic Agent</h2>
+            <p class="mb-8">A B2B SaaS platform offering the industry's first autonomous, self-regulating LLMOps solution.</p>
             <div class="card p-8">
-                <p>בהשראת הומאוסטזיס ביולוגי, הפלטפורמה מנטרת באופן רציף את ביצועי ה-LLM ובוחרת באופן דינמי ואוטומטי את אסטרטגיית העדכון היעילה ביותר <span class="highlight">(RAG, Prompt או Fine-tuning)</span> כדי לשמר ביצועים אופטימליים בעלות מינימלית.</p>
+                <p>Inspired by biological homeostasis, our platform continuously monitors LLM performance and dynamically, automatically selects the most efficient update strategy <span class="highlight">(RAG, Prompt, or Fine-tuning)</span> to maintain optimal performance at minimal cost.</p>
             </div>
-            <p class="mt-8 text-xl font-bold">מכלי ניהול ידניים למערכת בקרה אוטונומית וחכמה.</p>
+            <p class="mt-8 text-xl font-bold">From manual management tools to an intelligent, autonomous control system.</p>
         </div>
     </div>
 
     <div id="slide-4" class="slide">
         <div class="slide-content">
-            <h2>ארכיטקטורת ליבה: מערכת בקרה בחוג סגור</h2>
+            <h2>Core Architecture: Closed-Loop Control System</h2>
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-white">
                 <div class="card flex-1 p-6 text-center">
                     <div class="text-5xl mb-4">🔬</div>
-                    <h3 class="text-2xl font-bold text-teal-300">Sensor (חיישן)</h3>
-                    <p class="mt-2 text-gray-300">מנטר באופן רציף את "בריאות" המודל: עלות, איכות, דיוק ושימור ידע.</p>
+                    <h3 class="text-2xl font-bold text-teal-300">Sensor</h3>
+                    <p class="mt-2 text-gray-300">Continuously monitors model 'health': cost, quality, accuracy, and knowledge retention.</p>
                 </div>
                 <div class="text-4xl mx-4 text-gray-500 self-center hidden md:block">→</div>
                 <div class="card flex-1 p-6 text-center border-2 border-teal-300 shadow-lg shadow-teal-500/20">
                     <div class="text-5xl mb-4">🧠</div>
-                    <h3 class="text-2xl font-bold text-teal-300">Controller (בקר)</h3>
-                    <p class="mt-2 text-gray-300">סוכן למידת חיזוק (RL) שמנתח את הנתונים ולומד את מדיניות התיקון האופטימלית.</p>
+                    <h3 class="text-2xl font-bold text-teal-300">Controller</h3>
+                    <p class="mt-2 text-gray-300">A Reinforcement Learning (RL) agent that analyzes data and learns the optimal remediation policy.</p>
                 </div>
                 <div class="text-4xl mx-4 text-gray-500 self-center hidden md:block">→</div>
                 <div class="card flex-1 p-6 text-center">
                     <div class="text-5xl mb-4">⚙️</div>
-                    <h3 class="text-2xl font-bold text-teal-300">Actuator (מפעיל)</h3>
-                    <p class="mt-2 text-gray-300">מבצע אוטומטית את הפעולה שנבחרה: עדכון RAG, שינוי Prompt או הפעלת Fine-tuning.</p>
+                    <h3 class="text-2xl font-bold text-teal-300">Actuator</h3>
+                    <p class="mt-2 text-gray-300">Automatically executes the selected action: updating RAG, modifying a prompt, or triggering a fine-tuning job.</p>
                 </div>
             </div>
         </div>
@@ -207,20 +206,20 @@
 
     <div id="slide-5" class="slide">
         <div class="slide-content">
-            <h2>הזדמנות השוק</h2>
-            <p class="mb-8">אנו פונים לשוק גדול וצומח במהירות, ומתמקדים ב"פער האוטונומיה" שמתחרים משאירים חשוף.</p>
+            <h2>The Market Opportunity</h2>
+            <p class="mb-8">We are addressing a large, rapidly growing market, focusing on the "autonomy gap" left open by competitors.</p>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="card text-center p-8">
-                    <p class="text-lg text-gray-400">שוק ה-LLMOps</p>
-                    <p class="text-5xl font-bold text-teal-300 my-2">$13.95<span class="text-3xl"> מיליארד</span></p>
-                    <p class="text-lg">צפי עד שנת 2030</p>
-                    <p class="text-md text-gray-500">(קצב צמיחה שנתי של 21.3%)</p>
+                    <p class="text-lg text-gray-400">LLMOps Market</p>
+                    <p class="text-5xl font-bold text-teal-300 my-2">$13.95<span class="text-3xl"> Billion</span></p>
+                    <p class="text-lg">Forecast by 2030</p>
+                    <p class="text-md text-gray-500">(21.3% CAGR)</p>
                 </div>
                 <div class="card text-center p-8">
-                    <p class="text-lg text-gray-400">שוק ה-MLOps הכללי</p>
-                    <p class="text-5xl font-bold text-teal-300 my-2">$19<span class="text-3xl"> מיליארד+</span></p>
-                    <p class="text-lg">צפי עד שנת 2030</p>
-                    <p class="text-md text-gray-500">(קצב צמיחה שנתי של 36%)</p>
+                    <p class="text-lg text-gray-400">Total MLOps Market</p>
+                    <p class="text-5xl font-bold text-teal-300 my-2">$19<span class="text-3xl"> Billion+</span></p>
+                    <p class="text-lg">Forecast by 2030</p>
+                    <p class="text-md text-gray-500">(36% CAGR)</p>
                 </div>
             </div>
         </div>
@@ -228,13 +227,13 @@
 
     <div id="slide-6" class="slide">
         <div class="slide-content">
-            <h2>נוף תחרותי: פער האוטונומיה</h2>
-            <p class="mb-8">המתחרים מספקים <span class="highlight">כלים</span> למפעילים אנושיים. אנחנו מספקים <span class="highlight">סוכן אוטונומי</span> שמבצע את העבודה.</p>
+            <h2>Competitive Landscape: The Autonomy Gap</h2>
+            <p class="mb-8">Competitors provide <span class="highlight">tools</span> for human operators. We provide an <span class="highlight">autonomous agent</span> that does the work.</p>
             <div class="overflow-x-auto">
                 <table class="w-full text-sm text-center bg-gray-800/50 rounded-lg">
                     <thead class="text-xs text-teal-300 uppercase">
                         <tr>
-                            <th scope="col" class="px-6 py-3 text-right">יכולת</th>
+                            <th scope="col" class="px-6 py-3 text-left">Capability</th>
                             <th scope="col" class="px-6 py-3">Databricks / W&B</th>
                             <th scope="col" class="px-6 py-3">Arize AI</th>
                             <th scope="col" class="px-6 py-3 bg-teal-900/50 rounded-t-lg">Homeostatic AI</th>
@@ -242,22 +241,22 @@
                     </thead>
                     <tbody>
                         <tr class="border-b border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-right">ניטור ותצפיתנות</th>
+                            <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-left">Monitoring & Observability</th>
                             <td class="px-6 py-4">✅</td>
                             <td class="px-6 py-4">✅✅</td>
                             <td class="px-6 py-4 bg-teal-900/50">✅✅</td>
                         </tr>
                         <tr class="border-b border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-right">קבלת החלטות אוטונומית</th>
+                            <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-left">Autonomous Decision-Making</th>
                             <td class="px-6 py-4">❌</td>
                             <td class="px-6 py-4">❌</td>
-                            <td class="px-6 py-4 bg-teal-900/50 font-bold">ליבת המוצר</td>
+                            <td class="px-6 py-4 bg-teal-900/50 font-bold">Core Product</td>
                         </tr>
                         <tr>
-                            <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-right">תיקון אוטומטי</th>
+                            <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-left">Automated Remediation</th>
                             <td class="px-6 py-4">❌</td>
                             <td class="px-6 py-4">❌</td>
-                            <td class="px-6 py-4 bg-teal-900/50 font-bold">ליבת המוצר</td>
+                            <td class="px-6 py-4 bg-teal-900/50 font-bold">Core Product</td>
                         </tr>
                     </tbody>
                 </table>
@@ -267,33 +266,33 @@
 
     <div id="slide-7" class="slide">
         <div class="slide-content text-center">
-            <h2>ההצעה ("The Ask")</h2>
+            <h2>The Ask</h2>
             <div class="inline-block card p-10 my-8">
-                <p class="text-2xl mb-2">אנו מגייסים</p>
+                <p class="text-2xl mb-2">We are raising</p>
                 <p class="text-7xl font-bold text-teal-300 tracking-tight">$2,000,000</p>
-                <p class="text-2xl mt-2">בסבב סיד</p>
+                <p class="text-2xl mt-2">in a Seed Round</p>
             </div>
-            <p class="text-xl">תמורת <span class="highlight">20%</span> ממניות החברה, לפי שווי של <span class="highlight">$8 מיליון</span> לפני הכסף.</p>
-            <p class="mt-4">ההון יבטיח מסלול המראה (runway) של <span class="highlight">24 חודשים</span> להשגת התאמת מוצר-שוק ראשונית.</p>
+            <p class="text-xl">for <span class="highlight">20%</span> equity, at an <span class="highlight">$8 Million</span> pre-money valuation.</p>
+            <p class="mt-4">The capital will provide a <span class="highlight">24-month runway</span> to achieve initial product-market fit.</p>
         </div>
     </div>
 
     <div id="slide-8" class="slide">
         <div class="slide-content">
-            <h2>שימוש בכספים: תוכנית ל-24 חודשים</h2>
+            <h2>Use of Funds: 24-Month Plan</h2>
             <div class="flex flex-col md:flex-row items-center justify-around gap-8">
-                <div class="w-full md:w-1/2 space-y-4 text-right">
+                <div class="w-full md:w-1/2 space-y-4 text-left">
                     <div class="p-4 rounded-lg bg-indigo-500/20 border border-indigo-500">
-                        <p class="text-2xl font-bold">70% - מחקר ופיתוח</p>
-                        <p>$1,400,000 | גיוס 2 מהנדסי AI/ML בכירים והרחבת צוות הפיתוח.</p>
+                        <p class="text-2xl font-bold">70% - Research & Development</p>
+                        <p>$1,400,000 | Hire 2 senior AI/ML engineers and expand the development team.</p>
                     </div>
                     <div class="p-4 rounded-lg bg-sky-500/20 border border-sky-500">
-                        <p class="text-2xl font-bold">20% - ענן ותשתיות</p>
-                        <p>$400,000 | משאבי חישוב GPU לאימון בקר ה-RL וניסויים.</p>
+                        <p class="text-2xl font-bold">20% - Cloud & Infrastructure</p>
+                        <p>$400,000 | GPU compute resources for training the RL controller and experimentation.</p>
                     </div>
                     <div class="p-4 rounded-lg bg-gray-500/20 border border-gray-500">
-                        <p class="text-2xl font-bold">10% - כללי ומנהלה</p>
-                        <p>$200,000 | הוצאות משפט, שיווק ראשוני ותפעול.</p>
+                        <p class="text-2xl font-bold">10% - General & Administrative</p>
+                        <p>$200,000 | Legal, initial marketing, and operational expenses.</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/3">
@@ -306,22 +305,22 @@
 
     <div id="slide-9" class="slide">
         <div class="slide-content">
-            <h2>מפת דרכים</h2>
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-right">
+            <h2>Roadmap</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
                 <div class="card p-6">
-                    <p class="text-sm text-gray-400">שלב 1 (חודשים 1-4)</p>
-                    <h3 class="text-xl font-bold text-teal-300 mb-2">הוכחת היתכנות (POC)</h3>
-                    <p>הדגמת מנגנון הבקרה בחוג סגור בסביבה מבוקרת.</p>
+                    <p class="text-sm text-gray-400">Phase 1 (Months 1-4)</p>
+                    <h3 class="text-xl font-bold text-teal-300 mb-2">Proof of Concept (POC)</h3>
+                    <p>Demonstrate the closed-loop control mechanism in a controlled environment.</p>
                 </div>
                 <div class="card p-6 border-2 border-teal-400">
-                    <p class="text-sm text-gray-400">שלב 2 (חודשים 5-12)</p>
-                    <h3 class="text-xl font-bold text-teal-300 mb-2">מוצר מינימלי (MVP)</h3>
-                    <p>פיתוח מוצר יציב עבור 3-5 שותפי עיצוב ארגוניים ואימות ראשוני.</p>
+                    <p class="text-sm text-gray-400">Phase 2 (Months 5-12)</p>
+                    <h3 class="text-xl font-bold text-teal-300 mb-2">Minimum Viable Product (MVP)</h3>
+                    <p>Develop a stable product for 3-5 enterprise design partners and conduct initial validation.</p>
                 </div>
                 <div class="card p-6">
-                    <p class="text-sm text-gray-400">שלב 3 (חודשים 13-24)</p>
-                    <h3 class="text-xl font-bold text-teal-300 mb-2">גרסה מסחרית 1.0</h3>
-                    <p>השקת מוצר SaaS מלא, מוכן לארגונים, המייצר הכנסות ראשוניות.</p>
+                    <p class="text-sm text-gray-400">Phase 3 (Months 13-24)</p>
+                    <h3 class="text-xl font-bold text-teal-300 mb-2">Commercial Version 1.0</h3>
+                    <p>Launch a full, enterprise-ready SaaS product generating initial revenue.</p>
                 </div>
             </div>
         </div>
@@ -329,21 +328,21 @@
 
     <div id="slide-10" class="slide">
         <div class="slide-content text-center">
-            <h2>החזון: הדור הבא של AI בר-קיימא</h2>
-            <p class="text-2xl my-8">אנו לא רק בונים כלי לחיסכון בעלויות; אנו בונים את התשתית הבסיסית לדור הבא של מערכות AI <span class="highlight">אדפטיביות, עמידות ואינטליגנטיות באמת.</span></p>
-            <p class="text-3xl font-bold text-teal-300">עתיד הבינה המלאכותית הוא הומאוסטטי.</p>
+            <h2>The Vision: The Next Generation of Sustainable AI</h2>
+            <p class="text-2xl my-8">We aren't just building a cost-saving tool; we are building the foundational infrastructure for the next generation of truly <span class="highlight">adaptive, resilient, and intelligent</span> AI systems.</p>
+            <p class="text-3xl font-bold text-teal-300">The future of AI is homeostatic.</p>
             <div class="mt-12">
-                <p class="text-xl font-bold">תודה רבה.</p>
-                <p class="text-lg">נשמח לענות על כל שאלה.</p>
+                <p class="text-xl font-bold">Thank you.</p>
+                <p class="text-lg">We'd be happy to answer any questions.</p>
             </div>
         </div>
     </div>
 
     <div id="prevBtn" class="nav-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
     </div>
     <div id="nextBtn" class="nav-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
     </div>
 
     <div id="progressBar"></div>
@@ -404,10 +403,10 @@
 
             // Keyboard navigation
             document.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
                     e.preventDefault();
                     prevSlide();
-                } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown' || e.key === ' ') {
+                } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
                     e.preventDefault();
                     nextSlide();
                 }
@@ -419,6 +418,3 @@
     </script>
 </body>
 </html>
-
-
-
