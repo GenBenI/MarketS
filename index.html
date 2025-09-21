@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
+<style>
         body {
             font-family: 'Assistant', sans-serif;
-            overflow: hidden;
+            /* overflow: hidden;  <-- הורדתי את השורה הזו */
             background-color: #0a0a23;
             color: #f5f6f7;
         }
@@ -23,13 +23,14 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* <-- שיניתי מ-center ל-flex-start */
             align-items: center;
-            padding: 2rem 4rem;
+            padding: 5rem 4rem; /* <-- התאמתי את הריווח העליון */
             opacity: 0;
             transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
             transform: scale(0.95);
             pointer-events: none;
+            overflow-y: auto; /* <-- הוספתי את השורה הזו כדי לאפשר גלילה */
         }
         .slide.active {
             opacity: 1;
@@ -71,7 +72,7 @@
             align-items: center;
             cursor: pointer;
             z-index: 100;
-            transition: background-color 0.3s;
+            transition: background-color: 0.3s;
         }
         .nav-arrow:hover {
             background-color: rgba(255, 255, 255, 0.2);
@@ -114,7 +115,7 @@
         /* For responsive design */
         @media (max-width: 768px) {
             .slide {
-                padding: 1.5rem;
+                padding: 4rem 1.5rem;
             }
             h1 { font-size: 2.5rem; }
             h2 { font-size: 1.8rem; }
@@ -415,3 +416,4 @@
     </script>
 </body>
 </html>
+
